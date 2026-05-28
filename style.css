@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Bebas Neue Cyrillic";
-  src: url("fonts/BebasNeueCyrillic.ttf") format("truetype");
+  src: 
+      url("./fonts/bebas-neue-cyrillic.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -1632,5 +1633,29 @@ body {
   .footer-redes {
     gap: 16px;
     flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 900px) {
+  .sobre {
+    padding: 110px 20px 70px;
+  }
+
+  .sobre-container {
+    grid-template-columns: 1fr;
+    gap: 54px;
+    text-align: center;
+  }
+
+  .sobre-texto {
+    max-width: 100%;
+  }
+
+  .sobre p {
+    text-align: justify;
+  }
+
+  .sobre-imagem img {
+    width: min(320px, 82vw);
   }
 }
